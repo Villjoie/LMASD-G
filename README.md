@@ -298,8 +298,10 @@ Expected: optimizer groups (if saved), attribute head sizes, dropout `p`, #unfro
 ```bibtex
 @article{lmasdg2025,
   title   = {Looking at Multiple Attributes for a Single Decision: Gender Recognition at Extreme and Long Distances},
-  author  = {Mbongo, Nzakiese and Collaborators},
+  author  = {Mbongo Nzakiese,  Kailash A. Hambardea, Hugo Proença},
   journal = {arXiv},
-  year    = {2025}
+  year    = {2025},
+  archivePrefix={arXiv},
+  url={...}, 
 }
 ```
