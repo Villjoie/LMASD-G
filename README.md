@@ -1,6 +1,3 @@
-claro! aqui está o **README.md** prontinho — é só copiar e colar no teu repositório.
-
----
 
 # LMASD-G — Looking at Multiple Attributes for a Single Decision (Gender @ Long Range)
 
