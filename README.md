@@ -1,5 +1,5 @@
 
-# LMASD-G — Looking at Multiple Attributes for a Single Decision (Gender @ Long Range)
+# LMASD-G — Looking at Multiple Attributes for a Single Decision: Gender Recognition at Long Range
 
 **LMASD-G** is a multimodal architecture (CLIP + text→vision cross-attention) for **face-independent gender recognition** at **long distances** (≈10–120 m) and challenging viewpoints (30°, 60°, 90°). The model combines ***soft biometrics*** (beard, moustache, hairstyle, upper, lower, feet, accessories) with a pure visual pathway, fused via cross-attention. We evaluate on the unified **U-DetAGReID** benchmark (DetReIDx + AG-ReID.v2), reporting distance/height-stratified analyses and attention maps for interpretability.
 
