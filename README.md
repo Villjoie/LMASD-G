@@ -1,7 +1,7 @@
 
-# LMASD-G — Looking at Multiple Attributes for a Single Decision: Gender Recognition at Long Range
+# When Gender is Hard to See: Multi-Attribute Support for Long-Range Recognition
 
-**LMASD-G** is a multimodal architecture (CLIP + text→vision cross-attention) for **face-independent gender recognition** at **long distances** (≈10–120 m) and challenging viewpoints (30°, 60°, 90°). The model combines ***soft biometrics*** (beard, moustache, hairstyle, upper, lower, feet, accessories) with a pure visual pathway, fused via cross-attention. We evaluate on the unified **U-DetAGReID** benchmark (DetReIDx + AG-ReID.v2), reporting distance/height-stratified analyses and attention maps for interpretability.
+**When Gender is Hard to See: Multi-Attribute Support for Long-Range Recognition** presents a multimodal vision–language architecture (CLIP + text→vision cross-attention) for face-independent and occlusion-tolerant gender recognition at long-range distances (≈10–120 m) and challenging viewpoints (30°, 60°, 90°). The model combines ***soft biometrics*** (beard, moustache, hairstyle, upper clothing, lower clothing, feet, accessories) with a pure visual pathway, fused through cross-attention. Evaluation is conducted on the unified **U-DetAGReID** benchmark (DetReIDx + AG-ReID.v2), including distance- and height-stratified analyses and attention-map visualizations for interpretability.
 
 > **Core idea:** “**multiple details** for **a single decision**” — many weak cues, aligned through language–vision fusion, become robust and auditable when the face is not informative.
 
@@ -40,7 +40,7 @@
 * **Two paths:** (1) visual→gender and (2) text+visual→attributes (+aux gender)
 * **SCA (Spatial–Channel Attention):** refines patch tokens in both paths
 * **Text→vision attention per attribute:** prompts focus relevant regions
-* **Final fusion (CrossAttention):** merges gender logits from both paths
+* **Final fusion (cross-attention):** merges representations from both paths before the final gender classifier.
 * **Attribute heads:** one head per selected attribute
 * **“Unknown” class:** optional for ambiguous cases (Male/Female/Unknown)
 
@@ -296,12 +296,14 @@ Expected: optimizer groups (if saved), attribute head sizes, dropout `p`, #unfro
 ## Citation
 
 ```bibtex
-@article{lmasdg2025,
-  title   = {Looking at Multiple Attributes for a Single Decision: Gender Recognition at Extreme and Long Distances},
-  author  = {Mbongo Nzakiese,  Kailash A. Hambardea, Hugo Proença},
-  journal = {arXiv},
-  year    = {2025},
-  archivePrefix={arXiv},
-  url={...}, 
+@article{mbongo2025gender,
+  title        = {When Gender is Hard to See: Multi-Attribute Support for Long-Range Recognition},
+  author       = {Mbongo, Nzakiese and Hambarde, Kailash A. and Proen{\c{c}}a, Hugo},
+  journal      = {arXiv preprint arXiv:2512.06426},
+  year         = {2025},
+  doi          = {10.48550/arXiv.2512.06426},
+  url          = {https://doi.org/10.48550/arXiv.2512.06426}
 }
+
+
 ```
